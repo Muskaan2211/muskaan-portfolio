@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import EducationTimeline from "../components/EducationTimeline";
 import SkillExplorer from "../components/SkillExplorer";
+import ExperienceSection from "../components/ExperienceSection";
 import ProjectsPath from "../components/ProjectsPath";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
@@ -28,6 +29,7 @@ export default function Home() {
         {/* ORDER: Education → Skills → Projects */}
         <EducationTimeline />
         <SkillExplorer />
+        <ExperienceSection />
         <ProjectsPath />
         <ContactSection />
       </div>

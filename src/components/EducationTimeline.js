@@ -26,7 +26,7 @@ export default function EducationTimeline() {
   ];
 
   return (
-    <section id="education" className="py-14">
+    <section id="education" className="py-14 text-white">
       <Header title="Education" subtitle="A quick timeline of where I learned + what I focused on." />
 
       <div className="mt-8 grid md:grid-cols-2 gap-6">

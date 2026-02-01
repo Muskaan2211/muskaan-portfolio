@@ -26,24 +26,7 @@ export default function Hero() {
               I like building systems that are reliable, measurable, and useful.
             </p>
 
-            {/* Core Languages */}
-            <div className="mt-6">
-              <div className="text-xs font-semibold text-white/60">
-                Core Languages
-              </div>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {["Python", "Java", "C++", "JavaScript", "SQL", "R", "Bash"].map(
-                  (t) => (
-                    <span
-                      key={t}
-                      className="rounded-full border border-white/10 bg-white/10 text-white text-xs px-3 py-1 hover:bg-white/10 transition"
-                    >
-                      {t}
-                    </span>
-                  )
-                )}
-              </div>
-            </div>
+
 
             <div className="mt-7 flex flex-wrap gap-3">
               <a
@@ -77,7 +60,7 @@ export default function Hero() {
             {/* Big photo */}
             <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/20">
               <img
-                src="/profile.jpg"
+                src="/Muskaan_pic.jpg"
                 alt="Muskaan"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -96,6 +79,28 @@ export default function Hero() {
                 Software Engineer • Backend • Data
               </div>
             </div>
+            {/* Core Languages */}
+ 
+
+            <div className="mt-6">
+            <div className="mb-4 text-xs uppercase tracking-widest text-white/65 text-center">
+                Core Languages
+            </div>
+
+
+            <div className="mx-auto max-w-md grid grid-cols-2 gap-x-16 gap-y-3">
+            <MiniStat label="Python" accent="from-sky-400 to-indigo-400" />
+            <MiniStat label="JavaScript" accent="from-amber-400 to-orange-400" />
+            <MiniStat label="SQL" accent="from-emerald-400 to-teal-400" />
+            <MiniStat label="Java" accent="from-fuchsia-400 to-pink-400" />
+            <MiniStat label="C++" accent="from-indigo-400 to-purple-400" />
+            <MiniStat label="R / Bash" accent="from-slate-400 to-slate-500" />
+            </div>
+
+            </div>
+
+
+
 
             {/* Soft glow */}
             <div className="absolute -z-10 -top-10 h-40 w-40 rounded-full bg-sky-400/30 blur-3xl" />
@@ -107,16 +112,17 @@ export default function Hero() {
   );
 }
 
-function MiniStat({ label, value, accent }) {
+function MiniStat({ label, accent }) {
   return (
-    <div className="rounded-2xl border border-[#0f1724]/10 bg-white/70 p-4 hover:bg-white transition shadow-sm">
-      <div className="flex items-center gap-2">
-        <span className={`h-2 w-2 rounded-full bg-gradient-to-r ${accent}`} />
-        <div className="text-xs text-[#061026]/60">{label}</div>
-      </div>
-      <div className="mt-2 text-sm font-semibold text-[#061026]">
-        {value}
-      </div>
+    <div className="grid grid-cols-[14px_1fr] items-center gap-3 py-2">
+      <span
+        className={`h-2.5 w-2.5 rounded-full bg-gradient-to-r ${accent}`}
+      />
+      <span className="text-sm font-medium text-white/85">
+        {label}
+      </span>
     </div>
   );
 }
+
+

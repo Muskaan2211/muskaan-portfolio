@@ -41,7 +41,7 @@ export default function SkillExplorer() {
   const [active, setActive] = useState(categories[0]);
 
   return (
-    <section id="skills" className="py-14">
+    <section id="skills" className="py-14 text-white">
       <Header title="Skills" subtitle="Pick a category — skills update instantly." />
 
       <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 overflow-hidden shadow-xl">
