@@ -60,7 +60,7 @@ export default function Hero() {
             {/* Big photo */}
             <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/20">
               <img
-                src="/Muskaan_pic.jpg"
+                src="/Muskaan_pic.JPG"
                 alt="Muskaan"
                 className="w-full h-full object-cover"
                 onError={(e) => {

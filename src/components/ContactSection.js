@@ -75,7 +75,7 @@ export default function ContactSection() {
             <div className="w-full max-w-md rounded-2xl bg-white p-6 text-[#061026] shadow-xl">
               <h4 className="text-lg font-semibold">Quick Message</h4>
               <p className="mt-2 text-sm text-[#061026]/70">
-                This opens your email client (fast + no backend needed).
+                This opens your email client.
               </p>
               <ContactForm />
               <div className="mt-4 text-xs text-[#061026]/60">
