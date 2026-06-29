@@ -153,7 +153,7 @@ export default function Home() {
         <div className="hero-art float-in-right" aria-label="Animated portfolio visual">
           <div className="portrait-card">
             <div className="portrait-glow" />
-            <img src="/Muskaan_pic.JPG" alt="Muskaan Gauba" />
+            <img src="/Muskaan_pic.jpg" alt="Muskaan Gauba" />
             <div className="orbit orbit-one">FastAPI</div>
             <div className="orbit orbit-two">Kafka</div>
             <div className="orbit orbit-three">AWS</div>
